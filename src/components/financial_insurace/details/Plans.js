@@ -19,19 +19,19 @@ const Plans = () => {
         <div className={styles.plans}>
             <div className={styles.plan_options}>
                 <div className={styles.card_options}>
-                    <h1 value="comprehensive" onClick={(e) => handlePlan(e)}>$30.50</h1>
+                    <h1 value="Comprehensive" onClick={(e) => handlePlan(e)}>Comprehensive: $30.50</h1>
                     <Link to="/apply">Buy Now</Link>
                 </div>
             </div>
             <div className={styles.plan_options}>
                 <div className={styles.card_options}>
-                    <h1 value="third party, fire and theft" onClick={(e) => handlePlan(e)}>$22.50</h1>
+                    <h1 value="Third party, fire and theft" onClick={(e) => handlePlan(e)}>Third party, fire and Theft: $22.50</h1>
                     <Link to="/apply">Buy Now</Link>
                 </div>
             </div>
             <div className={styles.plan_options}>
                 <div className={styles.card_options}>
-                    <h1 value="third party" onClick={(e) => handlePlan(e)}>$10.00</h1>
+                    <h1 value="Third party" onClick={(e) => handlePlan(e)}>Third Party: $10.00</h1>
                     <Link to="/apply">Buy Now</Link>
                 </div>
             </div>

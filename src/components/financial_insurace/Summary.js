@@ -39,7 +39,7 @@ const Summary = () => {
 
             <div className={styles.summaryDetails}>
                 <p>Plan:</p>
-                <p className={styles.marginPlan}>comprehensive</p>
+                <p className={styles.marginPlan}>{state.plan}</p>
             </div>
 
             <div className={styles.summaryDetails}>

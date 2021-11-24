@@ -63,17 +63,16 @@ const PaymentDetails = () => {
                             type="number"
                             name="cvc"
                         />
-
                     </div>
 
                 </form>
+
+                <AiOutlineArrowRight className={styles.arrow} onClick={displaySummary} />
             </div>
 
-            <AiOutlineArrowRight className={styles.arrow} onClick={displaySummary} />
-
-            {showSummary && <Summary />}
-
         </div>
+
+        {showSummary && <Summary />}
 
     </div>
 }
