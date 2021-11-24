@@ -1,0 +1,46 @@
+.paymentplanform {
+    display: flex;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.personal_details {
+    font-size: 25px;
+}
+
+.input {
+    height: 40px;
+    width: 300px;
+    border: none;
+    background-color:rgb(236, 235, 235);
+    border-radius: 5px;
+    margin: 0 0 70px 140px;
+    font-size: 20px;
+}
+
+.input1 {
+    height: 40px;
+    width: 800px;
+    border: none;
+    background-color:rgb(236, 235, 235);
+    border-radius: 5px;
+    margin: 0 0 70px 150px;
+    font-size: 20px;
+    position:relative;
+}
+
+.arrow {
+    margin: 50px 0;
+    position: relative;
+    left: 1000px;
+}
+
+
+
+
+
+
+
