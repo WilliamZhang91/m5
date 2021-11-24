@@ -1,27 +1,37 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import styles from "./Form.module.css";
+import { useGlobalContext } from "../../store/context";
 import PersonalDetails from "../personal_details/PersonalDetails";
 
 const Plans = () => {
+
+    const state = useGlobalContext();
+    const { handlePlan } = useGlobalContext();
+
+    const target = (e) => {
+        console.log(e.target.attributes.getNamedItem("value").value)
+    }
+
     return <div>
-        <h1>Our Plans</h1>
+        <h1 className={`${styles.vehicle_details} ${styles.flex}`}>Our Plans</h1>
 
         <div className={styles.plans}>
             <div className={styles.plan_options}>
                 <div className={styles.card_options}>
-                    <h1>$30.50</h1>
+                    <h1 value="comprehensive" onClick={(e) => handlePlan(e)}>$30.50</h1>
                     <Link to="/apply">Buy Now</Link>
                 </div>
             </div>
             <div className={styles.plan_options}>
                 <div className={styles.card_options}>
-                    <h1>$22.50</h1>
+                    <h1 value="third party, fire and theft" onClick={(e) => handlePlan(e)}>$22.50</h1>
                     <Link to="/apply">Buy Now</Link>
                 </div>
             </div>
             <div className={styles.plan_options}>
                 <div className={styles.card_options}>
-                    <h1>$10.00</h1>
+                    <h1 value="third party" onClick={(e) => handlePlan(e)}>$10.00</h1>
                     <Link to="/apply">Buy Now</Link>
                 </div>
             </div>

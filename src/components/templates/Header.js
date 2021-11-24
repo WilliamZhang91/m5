@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
-import { BsSearch } from 'react-icons/bs'
+import { BsSearch } from 'react-icons/bs';
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return <div>
@@ -16,7 +17,7 @@ const Header = () => {
         <div className={styles.nav}>
             <p className={styles.links}>Buy a Car</p>
             <p className={styles.links}>Sell your Car</p>
-            <p className={styles.links}>Finance</p>
+            <Link to="/quote"><p className={styles.links}>Finance</p></Link>
             <p className={styles.links}>Insurance</p>
             <p className={styles.links}>FAQ</p>
         </div>

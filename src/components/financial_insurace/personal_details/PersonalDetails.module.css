@@ -1,3 +1,13 @@
+.layout {
+    width: 100%;
+    display:flex;
+    font-size: 25px;
+}
+
+.layout1 {
+    width: 75%;
+}
+
 .paymentplanform {
     display: flex;
 }
@@ -7,35 +17,44 @@
     font-weight: 400;
 }
 
-.personal_details {
-    font-size: 25px;
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin: 65px 0 0 0;
 }
 
 .input {
     height: 40px;
-    width: 300px;
+    width: 250px;
     border: none;
     background-color:rgb(236, 235, 235);
     border-radius: 5px;
-    margin: 0 0 70px 140px;
     font-size: 20px;
+    margin: 0 0 0 0;
 }
 
 .input1 {
     height: 40px;
-    width: 800px;
+    width: 530px;
     border: none;
     background-color:rgb(236, 235, 235);
     border-radius: 5px;
-    margin: 0 0 70px 150px;
     font-size: 20px;
-    position:relative;
+    margin: 0 0 0 0;   
+}
+
+.margin_input {
+    margin: 0 25px  0 0;
 }
 
 .arrow {
     margin: 50px 0;
     position: relative;
     left: 1000px;
+}
+
+.empty {
+    width: 25%;
 }
 
 

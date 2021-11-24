@@ -8,17 +8,24 @@
     margin-bottom: auto;
     margin-left: 10px;
     margin-right: 10px;
-    width: 200px;
-    position: aboslute;
-    left: 100px;
+    width: 240px;
     background-color: white;
     border: 1px solid rgb(0, 2, 114);
     border-radius: 5px;
     font-size: 20px;
 }
 
+.backgroundColor {
+    background-color: rgb(0, 24, 160);
+    color: white;
+}
+
 .plans {
     display: flex;
+}
+
+.empty {
+    width: 25%;
 }
 
 .plan_options {
@@ -34,16 +41,17 @@
 
 .flex {
     display: flex;
+    justify-content: space-between;
 }
 
 .button {
-    width: 200px;
+    width: 250px;
     height: 40px;
     border: 1px solid rgb(0, 2, 114);
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    margin: 0 0 0 170px;
+    margin: 0 0 0 20px;
 }
 
 .button1 {
@@ -51,7 +59,7 @@
     border-radius: 10px;
     margin: 0 0 0 20px; 
     font-size: 25px;
-    width: 200px;
+    width: 250px;
     height: 45px;
     background-color: rgb(1, 100, 230);
     color: white;
@@ -59,14 +67,14 @@
 
 .highlight {
     background-color: rgb(0, 24, 160);
-    width: 200px;
+    width: 250px;
     height: 40px;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
     color: white;
-    margin: 0 0 0 20px
+    margin: 0 0 0 20px;
 }
 
 .button:hover{
@@ -80,14 +88,14 @@
 
 .format {
     font-size: 25px;
+    width: 75%;
 }
 
 .form {
     border: none;
     border-radius: 5px;
-    margin: 0 0 75px 200px; 
     font-size: 30px;
-    width: 200px;
+    width: 250px;
     height: 40px;
     background-color: rgb(236, 233, 233);
 }
@@ -97,7 +105,7 @@
     border-radius: 5px;
     margin: 0 0 75px 85px; 
     font-size: 30px;
-    width: 425px;
+    width: 520px;
     height: 40px;
     background-color: rgb(236, 233, 233);
 }
@@ -107,7 +115,7 @@
     border-radius: 5px;
     margin: 0 0 75px 290px; 
     font-size: 30px;
-    width: 425px;
+    width: 510px;
     height: 40px;
     background-color: rgb(236, 233, 233);
 }
@@ -115,17 +123,22 @@
 
 .arrow {
     margin: 50px 0;
-    position: relative;
-    left: 1000px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .license {
-    margin: 60px 250px;
     font-size: 20px;
     height: 40px;
-    width: 420px;
+    width: 510px;
     border:none;
     border-radius: 5px;
-    background-color:rgb(235, 233, 233)
+    background-color:rgb(235, 233, 233);
+    margin: 60px 0 0 0;
 }
+
+.margin {
+    margin: 60px 0 0 0;
+}
+
 

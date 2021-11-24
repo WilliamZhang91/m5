@@ -48,6 +48,12 @@ const reducer = (state, action) => {
             email: action.value
         }
     }
+    if (action.type === "PLAN") {
+        return {
+            ...state, 
+            plan: action.value
+        }
+    }
     return state
 
 }  

@@ -1,6 +1,8 @@
 import styles from "./PersonalDetails.module.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PaymentDetails from "./PaymentDetails";
+import { AiOutlineArrowRight } from "react-icons/ai";
+
 
 const PaymentPlan = () => {
 
@@ -10,10 +12,14 @@ const PaymentPlan = () => {
         setShowPaymentDetails(true)
     }
 
+    useEffect(() => {
+        window.scrollTo(0, 300)
+      }, [displayPaymentDetails])
+
     return <div>
         <h1 className={styles.title}>Choose your payment plan</h1>
         <div>
-            <form className={styles.paymentplanform}>
+            <form className={styles.form}>
                 <input
                     type="radio"
                     id="fortnightly"
@@ -37,7 +43,7 @@ const PaymentPlan = () => {
                 <label htmlFor="huey">$743<div>per year</div></label>
             </form>
 
-            <button onClick={displayPaymentDetails}>Next</button>
+            <AiOutlineArrowRight onClick={displayPaymentDetails} />
         </div>
 
     {showPaymentDetails && <PaymentDetails />}

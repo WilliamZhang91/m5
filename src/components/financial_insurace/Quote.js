@@ -7,11 +7,10 @@ const Quote = () => {
 
     return (
         <div>
-            <h1 className={`${styles.quote} && ${styles.title}`}>Instant Auto Quote</h1>
+            <h1 className={`${styles.quote} ${styles.title}`}>Instant Auto Quote</h1>
             <div className={styles.quote}>
                 <Vehicle />
             </div>
-            <p>---------------------------------</p>
         </div>
     )
 }

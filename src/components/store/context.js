@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useReducer, useContext } from "react";
 import reducer from "./reducer";
 
-const url = 'https://mission-5-f1624-default-rtdb.asia-southeast1.firebasedatabase.app/details.json'
-
 const initialState = {
     registration: "",
     parked: "",
@@ -13,6 +11,7 @@ const initialState = {
     address: "",
     phone: "",
     email: "",
+    plan: "",
 }
 
 const AppContext = React.createContext()
@@ -77,6 +76,13 @@ const AppProvider = ({ children }) => {
         })
     };
 
+    const handlePlan = (e) => {
+        dispatch({
+            type: "PLAN",
+            value: e.target.attributes.getNamedItem("value").value
+        })
+    }
+
 
 
     return (
@@ -90,7 +96,8 @@ const AppProvider = ({ children }) => {
                 handleSurname,
                 handleAddress,
                 handlePhone,
-                handleEmail
+                handleEmail,
+                handlePlan,
             }}
         >
             {children}
